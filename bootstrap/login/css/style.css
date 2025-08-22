@@ -1,0 +1,48 @@
+:root {
+  --lilas: #be83d4;
+  --roxo: #5a2a83;
+  --laranja: #e9692c;
+  --branco: #ebece5;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  background-color: var(--branco);
+  color: var(--roxo);
+}
+
+.one {
+  padding: 1rem;
+  background-color: var(--laranja);
+  margin-top: 1rem;
+}
+
+.formulario {
+  width: 70%;
+}
+
+.email-form,
+.senha-form {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.email-ajuda {
+  color: rgb(95, 5, 5);
+  font-weight: 800;
+}
+
+.button {
+  background-color: var(--roxo);
+  color: var(--laranja);
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: var(--lilas);
+  color: var(--branco);
+  font-weight: bold;
+}

@@ -1,0 +1,15 @@
+:root {
+  --lilas: #be83d4;
+  --roxo: #5a2a83;
+  --laranja: #e9692c;
+  --branco: #ebece5;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  background-color: var(--branco);
+  color: var(--roxo);
+}
