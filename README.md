@@ -6,4 +6,5 @@
 
 ---
 
-Módulo 2 - framework Bootstrap.
+Módulo 2 - framework Bootstrap. <b>(Finalizado)</b>
+Módulo 3 -  Start da aplicação Nikel.
