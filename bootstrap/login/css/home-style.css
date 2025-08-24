@@ -20,7 +20,7 @@ body {
     width: 100vw;
 }
 .container-contudo {
-  display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -30,21 +30,19 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .container-master .container-contudo .logo-title a {
     color: #ebece5;
 }
 .title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bolder;
-    background-color: gray;
 }
 .navbar-btn {
-    border: #ebece5 2px solid;
+    border: #ebece5 1px solid;
     display: flex;
     justify-self: end;
-    background-color: darkkhaki;
 }
 .navbar-btn-icon {
     color: #ebece5;
@@ -54,13 +52,13 @@ body {
 .container-contudo .container-menu .menu {
     align-items: center;
     justify-items: center;
-    border-top: solid 1px var(--branco);
+    border-top: solid 1px var(--laranja);
     padding-top: 15px;
     padding-bottom: 6px;
     margin-top: 20px;
 }
 .container-contudo .container-menu .menu li a {
-     color: #ebece5;
+    color: #ebece5;
 }
 .container-menu .menu li a:hover {
     color: #e9692c;
