@@ -1,15 +1,129 @@
 :root {
-  --lilas: #be83d4;
-  --roxo: #5a2a83;
-  --laranja: #e9692c;
-  --branco: #ebece5;
+    --lilas: #be83d4;
+    --roxo: #5a2a83;
+    --laranja: #e9692c;
+    --branco: #ebece5;
 }
-
 body {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-  background-color: var(--branco);
-  color: var(--roxo);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    background-color: #ebece5;
+}
+.container-master {
+    background-color: #5a2a83;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.container-contudo {
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+.container-master .container-contudo .logo-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container-master .container-contudo .logo-title a {
+    color: #ebece5;
+}
+.title {
+    font-size: 14px;
+    font-weight: bolder;
+    background-color: gray;
+}
+.navbar-btn {
+    border: #ebece5 2px solid;
+    display: flex;
+    justify-self: end;
+    background-color: darkkhaki;
+}
+.navbar-btn-icon {
+    color: #ebece5;
+    width: 20px;
+    height: 20px;
+}
+.container-contudo .container-menu .menu {
+    align-items: center;
+    justify-items: center;
+    border-top: solid 1px var(--branco);
+    padding-top: 15px;
+    padding-bottom: 6px;
+    margin-top: 20px;
+}
+.container-contudo .container-menu .menu li a {
+     color: #ebece5;
+}
+.container-menu .menu li a:hover {
+    color: #e9692c;
+    font-weight: bold;
+}
+.container-menu .menu .container-submenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-menu .menu .container-submenu .dropdown-menu {
+    background-color: var(--roxo);
+    border: none;
+    border-top: solid 1px var(--laranja);
+    text-align: center;
+}
+.container-menu .menu .container-submenu .dropdown-menu a {
+    font-weight: 600;
+}
+/* responsividade */
+
+@media (min-width: 992px) {
+    .container-master {
+        min-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-contudo {
+        max-width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo-title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+    }
+    .title {
+        font-size: 22px;
+        width: 100%;
+    }
+    .container-contudo .container-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+    }
+    .container-contudo .container-menu .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+    }
+    .container-contudo .container-menu .menu {
+        border-top: none;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+    }
 }
