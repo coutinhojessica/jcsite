@@ -73,7 +73,20 @@ h1::after {
 }
 .container-card {
     background-color: var(--branco);
-    border: none;
+    margin: 5px 0px;
+}
+.conteudo-card:hover {
+    background-color: var(--laranja);
+    transition: 3s;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--roxo);
+    color: var(--branco);
+    height: 50px;
 }
 /*responsividade*/
 
