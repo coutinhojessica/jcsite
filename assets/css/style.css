@@ -24,7 +24,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 85%;
+    width: 95%;
     max-height: 95%;
 }
 .logo-title {
@@ -58,7 +58,26 @@ h1::after {
     }
 }
 .img {
+    margin-top: 30px;
+}
+.img img {
+    width: 90px;
+    border-radius: 100%;
+}
+.img-curso {
+    margin-top: 50px;
     border-top: 2px var(--lilas) solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-curso h3 {
+    margin-top: 30px;
+}
+.img-curso .logo-cursos img {
+    width: 70px;
+    margin: 3px;
 }
 .container-projeto {
     display: flex;
@@ -90,7 +109,12 @@ footer {
 }
 /*responsividade*/
 
-@media (max-width:768px) {
+@media (max-width: 810px) {
+    .title {
+        height: 150px;
+    }
+}
+@media (max-width: 600px) {
     .conteudo {
         display: flex;
         flex-direction: column;
@@ -98,7 +122,7 @@ footer {
         height: 100%;
     }
     .logo-title {
-        height: 300px;
+        height: 100%;
     }
     .title {
         color: var(--laranja);
@@ -110,11 +134,17 @@ footer {
     .container-projeto {
         border-left: none;
         border-top: 3px solid var(--roxo);
-        max-height: 360px;
+        max-height: 85%;
         width: 100%
     }
     .cartao {
         padding-top: 10px;
         height: 359px
+    }
+    .logo-curso img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
