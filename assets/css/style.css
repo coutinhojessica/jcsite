@@ -13,12 +13,63 @@ body {
   min-height: 100vh;
   font-size: 16px;
 }
+a {
+  color: #5a2a83;
+}
 .container-master {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+.container-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.conteudo-header {
+  background-color: #ebece5;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-title a:hover {
+  color: #5a2a83;
+}
+.title-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container-icon {
+  border: 3px solid var(--roxo);
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-icon button:focus {
+  border: none;
+  outline: none;
+}
+.conteudo-menu li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.conteudo-menu li a {
+  color: var(--roxo);
+  text-transform: uppercase;
+}
+.conteudo-menu li a:hover {
+  color: var(--laranja);
 }
 .conteudo {
   display: flex;
@@ -36,6 +87,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 30px;
+  border-bottom: #5a2a83 3px solid;
 }
 .title {
   width: 100%;
@@ -89,6 +141,7 @@ h1::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 3s;
 }
 .btn-home:hover {
   background-color: transparent;
