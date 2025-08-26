@@ -1,150 +1,164 @@
 :root {
-    --lilas: #be83d4;
-    --roxo: #5a2a83;
-    --laranja: #e9692c;
-    --branco: #ebece5;
+  --lilas: #be83d4;
+  --roxo: #5a2a83;
+  --laranja: #e9692c;
+  --branco: #ebece5;
 }
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-size: 16px;
 }
 .container-master {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--branco);
-    width: 100vw;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .conteudo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 95%;
-    max-height: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .logo-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(45deg, var(--lilas) 40%, var(--laranja) 70%);
+  width: 100%;
+  height: 100%;
+  padding: 30px;
 }
 .title {
-    color: var(--laranja);
-    height: 100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--roxo);
+  width: 100%;
 }
 .title h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+  max-width: 600px;
+  max-height: 30%;
 }
 h1::after {
-    content: '|';
-    margin-left: 3px;
-    opacity: 1;
-    animation: blink 7s infinite;
-    text-align: center;
+  content: "|";
+  margin-left: 3px;
+  opacity: 1;
+  animation: blink 2s infinite;
+  text-align: center;
 }
 @keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
-.img {
-    margin-top: 30px;
+.title p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  width: 75%;
+  margin-top: 20px;
+  color: var(--branco);
 }
-.img img {
-    width: 90px;
-    border-radius: 100%;
+.btn-home {
+  max-width: 50%;
+  padding: 10px;
+  background-color: var(--laranja);
+  color: var(--branco);
+  font-weight: 600;
+  border: gray 1px solid;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-home:hover {
+  background-color: transparent;
+  border: 3px solid var(--laranja);
+  font-weight: 800;
+}
+.imagem-background {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-image: url("../img/Foto-de-fundo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
 }
 .img-curso {
-    margin-top: 50px;
-    border-top: 2px var(--lilas) solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin-top: 50px;
+  border-top: 2px var(--lilas) solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .img-curso h3 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .img-curso .logo-cursos img {
-    width: 70px;
-    margin: 3px;
+  width: 70px;
+  margin: 3px;
 }
 .container-projeto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-y: scroll;
-    max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  max-height: 95%;
 }
 .cartao {
-    height: 495px;
+  height: 495px;
 }
 .container-card {
-    background-color: var(--branco);
-    margin: 5px 0px;
+  background-color: var(--branco);
+  margin: 5px 0px;
 }
 .conteudo-card:hover {
-    background-color: var(--laranja);
-    transition: 3s;
+  background-color: var(--laranja);
+  transition: 3s;
 }
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--roxo);
-    color: var(--branco);
-    height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--roxo);
+  color: var(--branco);
+  height: 50px;
 }
 /*responsividade*/
 
-@media (max-width: 810px) {
-    .title {
-        height: 150px;
-    }
-}
-@media (max-width: 600px) {
-    .conteudo {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
-    .logo-title {
-        height: 100%;
-    }
-    .title {
-        color: var(--laranja);
-        height: 150px;
-    }
-    .title h1 {
-        width: 100vw;
-    }
-    .container-projeto {
-        border-left: none;
-        border-top: 3px solid var(--roxo);
-        max-height: 85%;
-        width: 100%
-    }
-    .cartao {
-        padding-top: 10px;
-        height: 359px
-    }
-    .logo-curso img {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
+@media (max-width: 768px) {
+  .logo-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .imagem-background {
+    margin: 25px 0px;
+  }
 }
