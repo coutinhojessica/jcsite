@@ -16,6 +16,11 @@ body {
 a {
   color: #5a2a83;
 }
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
 .container-master {
   display: flex;
   flex-direction: column;
@@ -38,25 +43,31 @@ a {
   justify-content: space-around;
   align-items: center;
 }
-.container-title a:hover {
-  color: #5a2a83;
-}
 .title-icon {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.container-icon {
-  border: 3px solid var(--roxo);
-  width: 50px;
+.container-title a {
+  text-transform: uppercase;
+}
+.container-title a:hover {
+  color: #5a2a83;
+}
+.conteudo-icon {
+  background-color: var(--roxo);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.container-icon button:focus {
-  border: none;
   outline: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}
+.icon {
+  color: var(--branco);
 }
 .conteudo-menu li {
   display: flex;
