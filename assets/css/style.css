@@ -198,7 +198,7 @@ h1::after {
 .minha-foto {
   max-height: 350px;
   object-fit: cover;
-  transform: rotate(-10deg);
+  transform: rotate(-5deg);
 }
 .titulo-sobre {
   text-align: center;
@@ -215,6 +215,59 @@ h1::after {
 .foto-perfil {
   width: 100%;
   padding: 0px 20px;
+}
+.container-soft-hard-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.conteudo-soft-hard-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.conteudo-soft-skills,
+.conteudo-hard-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 20px 0px;
+  padding: 20px 0px;
+}
+.conteudo-soft-skills h2,
+.conteudo-hard-skills h2 {
+  color: var(--roxo);
+}
+.conteudo-soft-skills .container-progress,
+.conteudo-hard-skills .container-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 10px 0px;
+  padding: 5px 0px;
+}
+.progress-bar {
+  background: linear-gradient(45deg, var(--lilas) 40%, var(--laranja) 70%)
+    no-repeat fixed;
+  padding: 3px;
+}
+.progress-bar p {
+  font-size: 1rem;
+  font-weight: bolder;
+  color: var(--branco);
+  text-align: center;
 }
 .img-curso {
   margin-top: 50px;
@@ -249,6 +302,17 @@ h1::after {
 .conteudo-card:hover {
   background-color: var(--laranja);
   transition: 3s;
+}
+.link-topo a {
+  text-decoration: none;
+  color: #fff;
+  padding: 13px;
+  background-color: #351d54;
+  position: fixed;
+  right: 10px;
+  bottom: 65px;
+  border-radius: 5px;
+  border: 1px solid #fff;
 }
 footer {
   display: flex;
