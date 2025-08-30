@@ -261,13 +261,13 @@ h1::after {
 .progress-bar {
   background: linear-gradient(45deg, var(--lilas) 40%, var(--laranja) 70%)
     no-repeat fixed;
-  padding: 3px;
+  padding: 1px;
 }
 .progress-bar p {
-  font-size: 1rem;
   font-weight: bolder;
   color: var(--branco);
   text-align: center;
+  padding: 2px;
 }
 .img-curso {
   margin-top: 50px;
