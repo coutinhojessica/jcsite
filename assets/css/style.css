@@ -308,8 +308,8 @@ h1::after {
 }
 .control-prev-next {
   background-color: #ebece5a1;
-  height: 10%;
-  width: 5%;
+  max-height: 20%;
+  width: 10%;
   display: flex;
   flex-direction: row;
   justify-self: center;
@@ -328,8 +328,10 @@ h1::after {
   position: fixed;
   right: 10px;
   bottom: 65px;
-  border-radius: 5px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
   border: 1px solid #fff;
+  opacity: 0.5;
 }
 footer {
   display: flex;
