@@ -7,14 +7,14 @@
         <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet"/>
         <link href="./assets/css/style.css" rel="stylesheet"/>
         <title>
-        Jéssica Coutinho - Portfólio
+        Jéssica Coutinho
         </title>
         </meta>
         </meta>
     </head>
     <body>
         <div class="container-master">
-            <header class="container-header">
+            <header class="container-header" id="topo">
                 <nav class="conteudo-header navbar navbar-expand-lg">
                 <div class="container title-icon">
                     <div class="container-title">
@@ -57,7 +57,13 @@
                         Olá! Eu sou Jéssica Coutinho, Desenvolvedora Front-end.
                         </h1>
                         <p>Desenvolvedora Front-end apaixonada por criar interfaces modernas e funcionais.</p>
-                        <button class="btn-home">Conheça meu trabalho</button>
+                        <button class="btn-home">
+                            <a href="assets/file/Currículo.pdf" download="Currículo">
+                            Conheça meu trabalho <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+                            <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0"/>
+                            </svg>
+                        </a>
+                        </button>
                     </section>
                     <section class="imagem-background">
                     </section>
@@ -66,7 +72,7 @@
                         <div class="conteudo-sobre">
                             <h2 class="titulo-sobre">Sobre Mim</h2>
                         <div class="texto-sobre">
-                            <p class="descricao-sobre-mim">Olá! Meu nome é Jéssica Coutinho e sou uma desenvolvedora front-end apaixonada por criar interfaces modernas e funcionais. Com uma sólida formação em desenvolvimento web, adquiri habilidades em HTML, CSS, JavaScript e bootstrap. Hoje estou buscando ampliar meus conhecimentos e assim evoluir na framework popular React.</p>
+                            <p class="descricao-sobre-mim">Olá! Meu nome é Jéssica Coutinho e sou uma desenvolvedora front-end apaixonada por criar interfaces modernas e funcionais. Com uma sólida formação em desenvolvimento web, adquiri habilidades em HTML, CSS, JavaScript, Bootstrap e Git. Hoje estou buscando ampliar meus conhecimentos e assim evoluir na framework popular React.</p>
                             <p class="descricao-sobre-mim">Minha jornada na programação começou há alguns anos, quando descobri meu interesse por tecnologia e design. Desde então, tenho me dedicado a aprimorar minhas habilidades técnicas e a acompanhar as tendências do mercado para oferecer soluções inovadoras.</p>
                             <p class="descricao-sobre-mim">Além das habilidades técnicas, sou uma pessoa criativa, detalhista e comprometida com a qualidade do meu trabalho. Acredito que a comunicação eficaz e o trabalho em equipe são essenciais para o sucesso de qualquer projeto.</p>
                             <p class="descricao-sobre-mim">Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente. Se você está procurando uma desenvolvedora front-end dedicada e apaixonada pelo que faz, estou pronta para colaborar com você!</p>
@@ -85,7 +91,7 @@
                                             </div>
                                         </div>
                                         <div class="progress container-progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                                                 <p>Trabalho em equipe - 100%</p>
                                             </div>
                                         </div>
@@ -108,8 +114,8 @@
                                                 </div>
                                             </div>
                                             <div class="progress container-progress">
-                                                <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                                    <p>JavaScript - 30%</p>
+                                                <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                                                    <p>JS - 30%</p>
                                                 </div>
                                             </div>
                                             <div class="progress container-progress">
@@ -131,108 +137,63 @@
                         
                     </div>
                 </section>
-                <section class="img-curso">
-                        <h3>Cursos</h3>
-                        <div class="logo-cursos">
-                            <img class="img-fluid" src="assets/img/growdev-logo.png">
-                            <img class="img-fluid" src="./assets/img/trybe.png">
-                        </div>
-                        </img>
-                    </section>
                 <section class="container-projeto">
                     <div class="cartao">
-                        <div class="card container-card" style="width: 18rem;">
-                            <div class="card-body conteudo-card">
-                                <h5 class="card-title">
-                                Projeto Nikel
-                                </h5>
-                                <h6 class="card-subtitle mb-2 text-muted">
-                                Growdev
-                                </h6>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk of the card's content.
-                                </p>
-                                <a class="card-link" href="Nikel/index.html">
-                                    Saiba mais...
-                                </a>
+                        <h2>Portfólio</h2>
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide w-100 d-flex justify-content-center align-items-center">
+                            <div class="carousel-indicators control">
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
-                        </div>
-                        <div class="card container-card" style="width: 18rem;">
-                            <div class="card-body conteudo-card">
-                                <h5 class="card-title">
-                                Projeto Nikel
-                                </h5>
-                                <h6 class="card-subtitle mb-2 text-muted">
-                                Growdev
-                                </h6>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk of the card's content.
-                                </p>
-                                <a class="card-link" href="Nikel/index.html">
-                                    Saiba mais...
-                                </a>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="assets/img/img-site.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block control-legend">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                    <a class="link-project" href="http://">Saiba mais...</a>
+                                </div>
+                                </div>
+                                <div class="carousel-item">
+                                <img src="assets/img/img-site.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block control-legend">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                    <a class="link-project" href="http://">Saiba mais...</a>
+                                </div>
+                                </div>
+                                <div class="carousel-item">
+                                <img src="assets/img/img-site.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block control-legend">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                    <a class="link-project" href="http://">Saiba mais...</a>
+                                </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card container-card" style="width: 18rem;">
-                            <div class="card-body conteudo-card">
-                                <h5 class="card-title">
-                                Projeto Nikel
-                                </h5>
-                                <h6 class="card-subtitle mb-2 text-muted">
-                                Growdev
-                                </h6>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk of the card's content.
-                                </p>
-                                <a class="card-link" href="Nikel/index.html">
-                                    Saiba mais...
-                                </a>
+                            <button class="carousel-control-prev control-prev-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next control-prev-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                             </div>
-                        </div>
-                        <div class="card container-card" style="width: 18rem;">
-                            <div class="card-body conteudo-card">
-                                <h5 class="card-title">
-                                Projeto Nikel
-                                </h5>
-                                <h6 class="card-subtitle mb-2 text-muted">
-                                Growdev
-                                </h6>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk of the card's content.
-                                </p>
-                                <a class="card-link" href="Nikel/index.html">
-                                    Saiba mais...
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card container-card" style="width: 18rem;">
-                            <div class="card-body conteudo-card">
-                                <h5 class="card-title">
-                                Projeto Nikel
-                                </h5>
-                                <h6 class="card-subtitle mb-2 text-muted">
-                                Growdev
-                                </h6>
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk of the card's content.
-                                </p>
-                                <a class="card-link" href="Nikel/index.html">
-                                    Saiba mais...
-                                </a>
-                            </div>
-                        </div>
                     </div>
-                </div>
+                </section>
             </main>
         </div>
-    </div>
-            <section>
+
+            
         <div title="Voltar ao topo" class="link-topo">
           <a class="arrow" href="#topo">
-            <i class="fa-solid fa-angle-up fa-bounce fa-xl"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+            </svg>
           </a>
         </div>
-      </section>
     <footer>Todos os diretos&copy reservados a Jéssica Coutinho.</footer>
     <script crossorigin="anonymous" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
     </script>

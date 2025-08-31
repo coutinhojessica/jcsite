@@ -157,6 +157,10 @@ h1::after {
   align-items: center;
   transition: 3s;
 }
+.btn-home a {
+  color: #ebece5;
+  text-decoration: none;
+}
 .btn-home:hover {
   background-color: transparent;
   border: 3px solid var(--laranja);
@@ -182,6 +186,7 @@ h1::after {
   justify-content: center;
   align-items: center;
   padding: 50px 20px;
+  border-bottom: double var(--roxo) 1px;
 }
 .conteudo-sobre {
   max-width: 80%;
@@ -217,20 +222,14 @@ h1::after {
   padding: 0px 20px;
 }
 .container-soft-hard-skills {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
 }
 .conteudo-soft-hard-skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 99.9%;
 }
 .conteudo-soft-skills,
 .conteudo-hard-skills {
@@ -259,49 +258,67 @@ h1::after {
   padding: 5px 0px;
 }
 .progress-bar {
-  background: linear-gradient(45deg, var(--lilas) 40%, var(--laranja) 70%)
+  background: linear-gradient(45deg, var(--lilas) 40%, var(--laranja) 69.9%)
     no-repeat fixed;
   padding: 1px;
+  border: #5a2a837c 3px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 .progress-bar p {
-  font-weight: bolder;
+  font-weight: 900;
   color: var(--branco);
   text-align: center;
   padding: 2px;
-}
-.img-curso {
-  margin-top: 50px;
-  border-top: 2px var(--lilas) solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.img-curso h3 {
-  margin-top: 30px;
-}
-.img-curso .logo-cursos img {
-  width: 70px;
-  margin: 3px;
+  font-size: medium;
+  margin: auto 0px;
 }
 .container-projeto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-y: scroll;
-  max-height: 95%;
+  height: 100%;
+  width: 100%;
 }
 .cartao {
-  height: 495px;
+  height: 100%;
+  width: 95%;
+  margin: 20px 0px;
 }
-.container-card {
-  background-color: var(--branco);
-  margin: 5px 0px;
+.control-legend {
+  background-color: #ebece5a1;
+  max-height: 50%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.conteudo-card:hover {
-  background-color: var(--laranja);
-  transition: 3s;
+.link-project {
+  color: var(--roxo);
+  font-weight: 500;
+  text-decoration: none;
+}
+.link-project:hover {
+  color: var(--laranja);
+  font-weight: 500;
+}
+.control-prev-next {
+  background-color: #ebece5a1;
+  height: 10%;
+  width: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-self: center;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+.control-prev-next:hover {
+  background-color: #ebece5dc;
 }
 .link-topo a {
   text-decoration: none;
