@@ -290,7 +290,7 @@ h1::after {
   margin: 20px 0px;
 }
 .control-legend {
-  background-color: #ebece5a1;
+  background-color: var(--lilas);
   max-height: 50%;
   max-width: 100%;
   display: flex;
