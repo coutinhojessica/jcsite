@@ -91,6 +91,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-height: 100vh;
 }
 .logo-title {
   display: flex;
@@ -187,7 +188,7 @@ h1::after {
   justify-content: center;
   align-items: center;
   padding: 50px 20px;
-  border-bottom: double var(--roxo) 1px;
+  border-bottom: solid var(--roxo) 2px;
 }
 .conteudo-sobre {
   max-width: 80%;
@@ -276,51 +277,32 @@ h1::after {
   font-size: medium;
   margin: auto 0px;
 }
+/* Portfólio */
 .container-projeto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
+  padding: 50px;
 }
-.cartao {
-  height: 100%;
-  width: 95%;
-  margin: 20px 0px;
-}
-.control-legend {
-  background-color: var(--lilas);
-  max-height: 50%;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.link-project {
+.container-projeto h2{
+  text-align: center;
   color: var(--roxo);
-  font-weight: 500;
-  text-decoration: none;
 }
-.link-project:hover {
-  color: var(--laranja);
-  font-weight: 500;
+.btn{
+  background-color: #e9692c;
+  color:#ebece5;
+  font-weight: 600;
 }
-.control-prev-next {
-  background-color: #ebece5a1;
-  height: 50px;
-  width: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-self: center;
-  align-self: center;
-  border-radius: 50%;
-  aspect-ratio: 1/1;
+.btn:hover{
+  background-color: #be83d4;
+  color: var(--roxo);
+  font-weight: 600;
+
 }
-.control-prev-next:hover {
-  background-color: #ebece5dc;
-}
+/* Voltar para o topo */
 .link-topo a {
   text-decoration: none;
   color: #fff;
@@ -334,6 +316,7 @@ h1::after {
   border: 1px solid #fff;
   opacity: 0.5;
 }
+/* rodapé */
 .container-footer {
   display: flex;
   flex-direction: column;
