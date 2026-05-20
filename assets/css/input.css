@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+    --violeta: #660860;
+    --rosa: #fa5894;
+    --rosaClaro: #F2B591;
+    --laranja:#f07e13;
+    --preto: #0D0D0D;
+
+    --gradient-start: #660860;
+    --gradient-middle: #fa5894;
+    --gradient-end: #f07e13;
+
+  --animate-gradient: gradient 15s ease infinite;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+@layer utilities {
+  .bg-gradient-animated {
+    background-image: linear-gradient(
+      270deg,
+      var(--gradient-start),
+      var(--gradient-middle),
+      var(--gradient-end)
+    );
+    background-size: 400% 400%;
+  }
+}
